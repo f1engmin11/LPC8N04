@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\lib_chip_8Nxx\lib_chip_8Nxx.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\lib_board_dp\lib_board_dp.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\app_demo\app_demo.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>all</name>
+      <member>
+        <project>lib_board_dp</project>
+        <configuration>brd_8Nxx</configuration>
+      </member>
+      <member>
+        <project>lib_chip_8Nxx</project>
+        <configuration>chip_8Nxx_lib</configuration>
+      </member>
+      <member>
+        <project>app_demo</project>
+        <configuration>iflash_nxp_lpc8Nxx</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

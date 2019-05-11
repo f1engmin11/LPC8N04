@@ -1,0 +1,17 @@
+--create .\keil_output\core_m4\lib_chip_8Nxx.lib
+.\keil_output\core_m4\bussync_8nxx.o
+.\keil_output\core_m4\clock_8nxx.o
+.\keil_output\core_m4\eeprom_8nxx.o
+.\keil_output\core_m4\flash_8nxx.o
+.\keil_output\core_m4\gpio_8nxx.o
+.\keil_output\core_m4\i2c_8nxx.o
+.\keil_output\core_m4\iap_8nxx.o
+.\keil_output\core_m4\iocon_8nxx.o
+.\keil_output\core_m4\nfc_8nxx.o
+.\keil_output\core_m4\pmu_8nxx.o
+.\keil_output\core_m4\rtc_8nxx.o
+.\keil_output\core_m4\ssp_8nxx.o
+.\keil_output\core_m4\syscon_8nxx.o
+.\keil_output\core_m4\timer_8nxx.o
+.\keil_output\core_m4\tsen_8nxx.o
+.\keil_output\core_m4\wwdt_8nxx.o
