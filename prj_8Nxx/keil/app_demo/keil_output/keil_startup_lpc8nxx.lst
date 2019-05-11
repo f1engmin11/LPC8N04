@@ -466,7 +466,7 @@ Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
 work --depend=.\keil_output\keil_startup_lpc8nxx.d -o.\keil_output\keil_startup
 _lpc8nxx.o -I.\RTE\_iflash_lpc8Nxx -ID:\Keil_v5\ARM\PACK\Keil\LPC8N04_DFP\1.0.0
 \Device\Include -ID:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION_VERSION S
-ETA 523" --predefine="LPC8N04FHI24 SETA 1" --predefine="NO_CRP SETA 1" --list=.
+ETA 525" --predefine="LPC8N04FHI24 SETA 1" --predefine="NO_CRP SETA 1" --list=.
 \keil_output\keil_startup_lpc8nxx.lst ..\..\..\lib_chip_8Nxx\mods\startup\keil_
 startup_lpc8Nxx.s
 

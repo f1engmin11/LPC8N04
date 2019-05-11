@@ -1,4 +1,4 @@
-Component: ARM Compiler 5.06 update 4 (build 422) Tool: armlink [4d35d2]
+Component: ARM Compiler 5.06 update 1 (build 61) Tool: armlink [4d35a8]
 
 ==============================================================================
 
@@ -688,116 +688,116 @@ Memory Map of the image
 
   Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000934, Max: 0x00007800, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00000918, Max: 0x00007800, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000918, Max: 0x00007800, ABSOLUTE)
 
-    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x00000000   0x000000c0   Data   RO          236    RESET               keil_startup_lpc8nxx.o
-    0x000000c0   0x00000008   Code   RO         1013  * !!!main             c_p.l(__main.o)
-    0x000000c8   0x0000003c   Code   RO         1182    !!!scatter          c_p.l(__scatter.o)
-    0x00000104   0x0000001a   Code   RO         1184    !!handler_copy      c_p.l(__scatter_copy.o)
-    0x0000011e   0x00000002   PAD
-    0x00000120   0x0000001c   Code   RO         1186    !!handler_zi        c_p.l(__scatter_zi.o)
-    0x0000013c   0x00000002   Code   RO         1051    .ARM.Collect$$libinit$$00000000  c_p.l(libinit.o)
-    0x0000013e   0x00000000   Code   RO         1065    .ARM.Collect$$libinit$$00000002  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1067    .ARM.Collect$$libinit$$00000004  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1070    .ARM.Collect$$libinit$$0000000A  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1072    .ARM.Collect$$libinit$$0000000C  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1074    .ARM.Collect$$libinit$$0000000E  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1077    .ARM.Collect$$libinit$$00000011  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1079    .ARM.Collect$$libinit$$00000013  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1081    .ARM.Collect$$libinit$$00000015  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1083    .ARM.Collect$$libinit$$00000017  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1085    .ARM.Collect$$libinit$$00000019  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1087    .ARM.Collect$$libinit$$0000001B  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1089    .ARM.Collect$$libinit$$0000001D  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1091    .ARM.Collect$$libinit$$0000001F  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1093    .ARM.Collect$$libinit$$00000021  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1095    .ARM.Collect$$libinit$$00000023  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1097    .ARM.Collect$$libinit$$00000025  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1101    .ARM.Collect$$libinit$$0000002C  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1103    .ARM.Collect$$libinit$$0000002E  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1105    .ARM.Collect$$libinit$$00000030  c_p.l(libinit2.o)
-    0x0000013e   0x00000000   Code   RO         1107    .ARM.Collect$$libinit$$00000032  c_p.l(libinit2.o)
-    0x0000013e   0x00000002   Code   RO         1108    .ARM.Collect$$libinit$$00000033  c_p.l(libinit2.o)
-    0x00000140   0x00000002   Code   RO         1139    .ARM.Collect$$libshutdown$$00000000  c_p.l(libshutdown.o)
-    0x00000142   0x00000000   Code   RO         1165    .ARM.Collect$$libshutdown$$00000002  c_p.l(libshutdown2.o)
-    0x00000142   0x00000000   Code   RO         1167    .ARM.Collect$$libshutdown$$00000004  c_p.l(libshutdown2.o)
-    0x00000142   0x00000000   Code   RO         1170    .ARM.Collect$$libshutdown$$00000007  c_p.l(libshutdown2.o)
-    0x00000142   0x00000000   Code   RO         1173    .ARM.Collect$$libshutdown$$0000000A  c_p.l(libshutdown2.o)
-    0x00000142   0x00000000   Code   RO         1175    .ARM.Collect$$libshutdown$$0000000C  c_p.l(libshutdown2.o)
-    0x00000142   0x00000000   Code   RO         1178    .ARM.Collect$$libshutdown$$0000000F  c_p.l(libshutdown2.o)
-    0x00000142   0x00000002   Code   RO         1179    .ARM.Collect$$libshutdown$$00000010  c_p.l(libshutdown2.o)
-    0x00000144   0x00000000   Code   RO         1015    .ARM.Collect$$rtentry$$00000000  c_p.l(__rtentry.o)
-    0x00000144   0x00000000   Code   RO         1021    .ARM.Collect$$rtentry$$00000002  c_p.l(__rtentry2.o)
-    0x00000144   0x00000006   Code   RO         1033    .ARM.Collect$$rtentry$$00000004  c_p.l(__rtentry4.o)
-    0x0000014a   0x00000000   Code   RO         1023    .ARM.Collect$$rtentry$$00000009  c_p.l(__rtentry2.o)
-    0x0000014a   0x00000004   Code   RO         1024    .ARM.Collect$$rtentry$$0000000A  c_p.l(__rtentry2.o)
-    0x0000014e   0x00000000   Code   RO         1026    .ARM.Collect$$rtentry$$0000000C  c_p.l(__rtentry2.o)
-    0x0000014e   0x00000008   Code   RO         1027    .ARM.Collect$$rtentry$$0000000D  c_p.l(__rtentry2.o)
-    0x00000156   0x00000002   Code   RO         1056    .ARM.Collect$$rtexit$$00000000  c_p.l(rtexit.o)
-    0x00000158   0x00000000   Code   RO         1112    .ARM.Collect$$rtexit$$00000002  c_p.l(rtexit2.o)
-    0x00000158   0x00000004   Code   RO         1113    .ARM.Collect$$rtexit$$00000003  c_p.l(rtexit2.o)
-    0x0000015c   0x00000006   Code   RO         1114    .ARM.Collect$$rtexit$$00000004  c_p.l(rtexit2.o)
-    0x00000162   0x00000002   PAD
-    0x00000164   0x00000044   Code   RO          237    .text               keil_startup_lpc8nxx.o
-    0x000001a8   0x0000015a   Code   RO         1007    .text               c_p.l(aeabi_sdiv.o)
-    0x00000302   0x00000006   Code   RO         1011    .text               c_p.l(heapauxi.o)
-    0x00000308   0x0000003e   Code   RO         1037    .text               c_p.l(sys_stackheap_outer.o)
-    0x00000346   0x00000010   Code   RO         1040    .text               c_p.l(exit.o)
-    0x00000356   0x00000002   PAD
-    0x00000358   0x00000008   Code   RO         1052    .text               c_p.l(libspace.o)
-    0x00000360   0x0000000c   Code   RO         1109    .text               c_p.l(sys_exit.o)
-    0x0000036c   0x00000002   Code   RO         1128    .text               c_p.l(use_no_semi.o)
-    0x0000036e   0x00000000   Code   RO         1130    .text               c_p.l(indicate_semi.o)
-    0x0000036e   0x00000002   PAD
-    0x00000370   0x00000018   Code   RO          785    i.Board_Init        lib_board_8Nxx.lib(board.o)
-    0x00000388   0x00000044   Code   RO            8    i.CT16B0_IRQHandler  main.o
-    0x000003cc   0x00000002   Code   RO            9    i.CT32B0_IRQHandler  main.o
-    0x000003ce   0x00000028   Code   RO          892    i.Chip_BusSync_ReadReg  lib_chip_8Nxx.lib(bussync_8nxx.o)
-    0x000003f6   0x0000001e   Code   RO          893    i.Chip_BusSync_WaitSync  lib_chip_8Nxx.lib(bussync_8nxx.o)
-    0x00000414   0x0000001e   Code   RO          894    i.Chip_BusSync_WriteReg  lib_chip_8Nxx.lib(bussync_8nxx.o)
-    0x00000432   0x00000002   PAD
-    0x00000434   0x00000018   Code   RO          245    i.Chip_Clock_Peripheral_DisableClock  lib_chip_8Nxx.lib(clock_8nxx.o)
-    0x0000044c   0x00000018   Code   RO          246    i.Chip_Clock_Peripheral_EnableClock  lib_chip_8Nxx.lib(clock_8nxx.o)
-    0x00000464   0x00000014   Code   RO          254    i.Chip_Clock_System_GetClockDiv  lib_chip_8Nxx.lib(clock_8nxx.o)
-    0x00000478   0x00000014   Code   RO          255    i.Chip_Clock_System_GetClockFreq  lib_chip_8Nxx.lib(clock_8nxx.o)
-    0x0000048c   0x00000050   Code   RO          256    i.Chip_Clock_System_SetClockDiv  lib_chip_8Nxx.lib(clock_8nxx.o)
-    0x000004dc   0x0000001c   Code   RO          257    i.Chip_Clock_System_SetClockFreq  lib_chip_8Nxx.lib(clock_8nxx.o)
-    0x000004f8   0x00000014   Code   RO          923    i.Chip_Flash_GetHighPowerMode  lib_chip_8Nxx.lib(flash_8nxx.o)
-    0x0000050c   0x0000000c   Code   RO          924    i.Chip_Flash_GetNumWaitStates  lib_chip_8Nxx.lib(flash_8nxx.o)
-    0x00000518   0x0000000a   Code   RO          961    i.Chip_GPIO_Init    lib_chip_8Nxx.lib(gpio_8nxx.o)
-    0x00000522   0x00000014   Code   RO           10    i.Chip_GPIO_SetPinState  main.o
-    0x00000536   0x0000000c   Code   RO          449    i.Chip_IOCON_Init   lib_chip_8Nxx.lib(iocon_8nxx.o)
-    0x00000542   0x0000002a   Code   RO          451    i.Chip_IOCON_SetPinConfig  lib_chip_8Nxx.lib(iocon_8nxx.o)
-    0x0000056c   0x00000030   Code   RO          507    i.Chip_RTC_DeInit   lib_chip_8Nxx.lib(rtc_8nxx.o)
-    0x0000059c   0x0000001c   Code   RO          510    i.Chip_RTC_Int_ClearRawStatus  lib_chip_8Nxx.lib(rtc_8nxx.o)
-    0x000005b8   0x0000001c   Code   RO          512    i.Chip_RTC_Int_GetRawStatus  lib_chip_8Nxx.lib(rtc_8nxx.o)
-    0x000005d4   0x0000001c   Code   RO          513    i.Chip_RTC_Int_SetEnabledMask  lib_chip_8Nxx.lib(rtc_8nxx.o)
-    0x000005f0   0x00000018   Code   RO          515    i.Chip_RTC_Time_GetValue  lib_chip_8Nxx.lib(rtc_8nxx.o)
-    0x00000608   0x0000001c   Code   RO          522    i.Chip_RTC_Wakeup_SetReload  lib_chip_8Nxx.lib(rtc_8nxx.o)
-    0x00000624   0x0000000a   Code   RO          738    i.Chip_TIMER_Init   lib_chip_8Nxx.lib(timer_8nxx.o)
-    0x0000062e   0x00000002   PAD
-    0x00000630   0x00000168   Code   RO           11    i.Init              main.o
-    0x00000798   0x00000078   Code   RO           12    i.NVIC_SetPriority  main.o
-    0x00000810   0x00000034   Code   RO          174    i.RTC_IRQHandler    timer.o
-    0x00000844   0x0000004c   Code   RO           13    i.SysTick_Handler   main.o
-    0x00000890   0x00000068   Code   RO           14    i.main              main.o
-    0x000008f8   0x00000020   Data   RO         1180    Region$$Table       anon$$obj.o
+    0x00000000   0x00000000   0x000000c0   Data   RO          236    RESET               keil_startup_lpc8nxx.o
+    0x000000c0   0x000000c0   0x00000008   Code   RO         1022  * !!!main             c_p.l(__main.o)
+    0x000000c8   0x000000c8   0x0000003c   Code   RO         1191    !!!scatter          c_p.l(__scatter.o)
+    0x00000104   0x00000104   0x0000001a   Code   RO         1193    !!handler_copy      c_p.l(__scatter_copy.o)
+    0x0000011e   0x0000011e   0x00000002   PAD
+    0x00000120   0x00000120   0x0000001c   Code   RO         1195    !!handler_zi        c_p.l(__scatter_zi.o)
+    0x0000013c   0x0000013c   0x00000002   Code   RO         1060    .ARM.Collect$$libinit$$00000000  c_p.l(libinit.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1074    .ARM.Collect$$libinit$$00000002  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1076    .ARM.Collect$$libinit$$00000004  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1079    .ARM.Collect$$libinit$$0000000A  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1081    .ARM.Collect$$libinit$$0000000C  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1083    .ARM.Collect$$libinit$$0000000E  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1086    .ARM.Collect$$libinit$$00000011  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1088    .ARM.Collect$$libinit$$00000013  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1090    .ARM.Collect$$libinit$$00000015  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1092    .ARM.Collect$$libinit$$00000017  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1094    .ARM.Collect$$libinit$$00000019  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1096    .ARM.Collect$$libinit$$0000001B  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1098    .ARM.Collect$$libinit$$0000001D  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1100    .ARM.Collect$$libinit$$0000001F  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1102    .ARM.Collect$$libinit$$00000021  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1104    .ARM.Collect$$libinit$$00000023  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1106    .ARM.Collect$$libinit$$00000025  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1110    .ARM.Collect$$libinit$$0000002C  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1112    .ARM.Collect$$libinit$$0000002E  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1114    .ARM.Collect$$libinit$$00000030  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000000   Code   RO         1116    .ARM.Collect$$libinit$$00000032  c_p.l(libinit2.o)
+    0x0000013e   0x0000013e   0x00000002   Code   RO         1117    .ARM.Collect$$libinit$$00000033  c_p.l(libinit2.o)
+    0x00000140   0x00000140   0x00000002   Code   RO         1148    .ARM.Collect$$libshutdown$$00000000  c_p.l(libshutdown.o)
+    0x00000142   0x00000142   0x00000000   Code   RO         1174    .ARM.Collect$$libshutdown$$00000002  c_p.l(libshutdown2.o)
+    0x00000142   0x00000142   0x00000000   Code   RO         1176    .ARM.Collect$$libshutdown$$00000004  c_p.l(libshutdown2.o)
+    0x00000142   0x00000142   0x00000000   Code   RO         1179    .ARM.Collect$$libshutdown$$00000007  c_p.l(libshutdown2.o)
+    0x00000142   0x00000142   0x00000000   Code   RO         1182    .ARM.Collect$$libshutdown$$0000000A  c_p.l(libshutdown2.o)
+    0x00000142   0x00000142   0x00000000   Code   RO         1184    .ARM.Collect$$libshutdown$$0000000C  c_p.l(libshutdown2.o)
+    0x00000142   0x00000142   0x00000000   Code   RO         1187    .ARM.Collect$$libshutdown$$0000000F  c_p.l(libshutdown2.o)
+    0x00000142   0x00000142   0x00000002   Code   RO         1188    .ARM.Collect$$libshutdown$$00000010  c_p.l(libshutdown2.o)
+    0x00000144   0x00000144   0x00000000   Code   RO         1024    .ARM.Collect$$rtentry$$00000000  c_p.l(__rtentry.o)
+    0x00000144   0x00000144   0x00000000   Code   RO         1030    .ARM.Collect$$rtentry$$00000002  c_p.l(__rtentry2.o)
+    0x00000144   0x00000144   0x00000006   Code   RO         1042    .ARM.Collect$$rtentry$$00000004  c_p.l(__rtentry4.o)
+    0x0000014a   0x0000014a   0x00000000   Code   RO         1032    .ARM.Collect$$rtentry$$00000009  c_p.l(__rtentry2.o)
+    0x0000014a   0x0000014a   0x00000004   Code   RO         1033    .ARM.Collect$$rtentry$$0000000A  c_p.l(__rtentry2.o)
+    0x0000014e   0x0000014e   0x00000000   Code   RO         1035    .ARM.Collect$$rtentry$$0000000C  c_p.l(__rtentry2.o)
+    0x0000014e   0x0000014e   0x00000008   Code   RO         1036    .ARM.Collect$$rtentry$$0000000D  c_p.l(__rtentry2.o)
+    0x00000156   0x00000156   0x00000002   Code   RO         1065    .ARM.Collect$$rtexit$$00000000  c_p.l(rtexit.o)
+    0x00000158   0x00000158   0x00000000   Code   RO         1121    .ARM.Collect$$rtexit$$00000002  c_p.l(rtexit2.o)
+    0x00000158   0x00000158   0x00000004   Code   RO         1122    .ARM.Collect$$rtexit$$00000003  c_p.l(rtexit2.o)
+    0x0000015c   0x0000015c   0x00000006   Code   RO         1123    .ARM.Collect$$rtexit$$00000004  c_p.l(rtexit2.o)
+    0x00000162   0x00000162   0x00000002   PAD
+    0x00000164   0x00000164   0x00000044   Code   RO          237    .text               keil_startup_lpc8nxx.o
+    0x000001a8   0x000001a8   0x0000015a   Code   RO         1016    .text               c_p.l(aeabi_sdiv.o)
+    0x00000302   0x00000302   0x00000006   Code   RO         1020    .text               c_p.l(heapauxi.o)
+    0x00000308   0x00000308   0x0000003e   Code   RO         1046    .text               c_p.l(sys_stackheap_outer.o)
+    0x00000346   0x00000346   0x00000010   Code   RO         1049    .text               c_p.l(exit.o)
+    0x00000356   0x00000356   0x00000002   PAD
+    0x00000358   0x00000358   0x00000008   Code   RO         1061    .text               c_p.l(libspace.o)
+    0x00000360   0x00000360   0x0000000c   Code   RO         1118    .text               c_p.l(sys_exit.o)
+    0x0000036c   0x0000036c   0x00000002   Code   RO         1137    .text               c_p.l(use_no_semi.o)
+    0x0000036e   0x0000036e   0x00000000   Code   RO         1139    .text               c_p.l(indicate_semi.o)
+    0x0000036e   0x0000036e   0x00000002   PAD
+    0x00000370   0x00000370   0x00000018   Code   RO          794    i.Board_Init        lib_board_8Nxx.lib(board.o)
+    0x00000388   0x00000388   0x00000044   Code   RO            8    i.CT16B0_IRQHandler  main.o
+    0x000003cc   0x000003cc   0x00000002   Code   RO            9    i.CT32B0_IRQHandler  main.o
+    0x000003ce   0x000003ce   0x00000028   Code   RO          901    i.Chip_BusSync_ReadReg  lib_chip_8Nxx.lib(bussync_8nxx.o)
+    0x000003f6   0x000003f6   0x0000001e   Code   RO          902    i.Chip_BusSync_WaitSync  lib_chip_8Nxx.lib(bussync_8nxx.o)
+    0x00000414   0x00000414   0x0000001e   Code   RO          903    i.Chip_BusSync_WriteReg  lib_chip_8Nxx.lib(bussync_8nxx.o)
+    0x00000432   0x00000432   0x00000002   PAD
+    0x00000434   0x00000434   0x00000018   Code   RO          245    i.Chip_Clock_Peripheral_DisableClock  lib_chip_8Nxx.lib(clock_8nxx.o)
+    0x0000044c   0x0000044c   0x00000018   Code   RO          246    i.Chip_Clock_Peripheral_EnableClock  lib_chip_8Nxx.lib(clock_8nxx.o)
+    0x00000464   0x00000464   0x00000014   Code   RO          254    i.Chip_Clock_System_GetClockDiv  lib_chip_8Nxx.lib(clock_8nxx.o)
+    0x00000478   0x00000478   0x00000014   Code   RO          255    i.Chip_Clock_System_GetClockFreq  lib_chip_8Nxx.lib(clock_8nxx.o)
+    0x0000048c   0x0000048c   0x00000050   Code   RO          256    i.Chip_Clock_System_SetClockDiv  lib_chip_8Nxx.lib(clock_8nxx.o)
+    0x000004dc   0x000004dc   0x0000001c   Code   RO          257    i.Chip_Clock_System_SetClockFreq  lib_chip_8Nxx.lib(clock_8nxx.o)
+    0x000004f8   0x000004f8   0x00000014   Code   RO          932    i.Chip_Flash_GetHighPowerMode  lib_chip_8Nxx.lib(flash_8nxx.o)
+    0x0000050c   0x0000050c   0x0000000c   Code   RO          933    i.Chip_Flash_GetNumWaitStates  lib_chip_8Nxx.lib(flash_8nxx.o)
+    0x00000518   0x00000518   0x0000000a   Code   RO          970    i.Chip_GPIO_Init    lib_chip_8Nxx.lib(gpio_8nxx.o)
+    0x00000522   0x00000522   0x00000014   Code   RO           10    i.Chip_GPIO_SetPinState  main.o
+    0x00000536   0x00000536   0x0000000c   Code   RO          458    i.Chip_IOCON_Init   lib_chip_8Nxx.lib(iocon_8nxx.o)
+    0x00000542   0x00000542   0x0000002a   Code   RO          460    i.Chip_IOCON_SetPinConfig  lib_chip_8Nxx.lib(iocon_8nxx.o)
+    0x0000056c   0x0000056c   0x00000030   Code   RO          516    i.Chip_RTC_DeInit   lib_chip_8Nxx.lib(rtc_8nxx.o)
+    0x0000059c   0x0000059c   0x0000001c   Code   RO          519    i.Chip_RTC_Int_ClearRawStatus  lib_chip_8Nxx.lib(rtc_8nxx.o)
+    0x000005b8   0x000005b8   0x0000001c   Code   RO          521    i.Chip_RTC_Int_GetRawStatus  lib_chip_8Nxx.lib(rtc_8nxx.o)
+    0x000005d4   0x000005d4   0x0000001c   Code   RO          522    i.Chip_RTC_Int_SetEnabledMask  lib_chip_8Nxx.lib(rtc_8nxx.o)
+    0x000005f0   0x000005f0   0x00000018   Code   RO          524    i.Chip_RTC_Time_GetValue  lib_chip_8Nxx.lib(rtc_8nxx.o)
+    0x00000608   0x00000608   0x0000001c   Code   RO          531    i.Chip_RTC_Wakeup_SetReload  lib_chip_8Nxx.lib(rtc_8nxx.o)
+    0x00000624   0x00000624   0x0000000a   Code   RO          747    i.Chip_TIMER_Init   lib_chip_8Nxx.lib(timer_8nxx.o)
+    0x0000062e   0x0000062e   0x00000002   PAD
+    0x00000630   0x00000630   0x00000168   Code   RO           11    i.Init              main.o
+    0x00000798   0x00000798   0x00000078   Code   RO           12    i.NVIC_SetPriority  main.o
+    0x00000810   0x00000810   0x00000034   Code   RO          174    i.RTC_IRQHandler    timer.o
+    0x00000844   0x00000844   0x0000004c   Code   RO           13    i.SysTick_Handler   main.o
+    0x00000890   0x00000890   0x00000068   Code   RO           14    i.main              main.o
+    0x000008f8   0x000008f8   0x00000020   Data   RO         1189    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Base: 0x10000000, Size: 0x00000380, Max: 0x00002000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x10000000, Load base: 0x00000918, Size: 0x00000380, Max: 0x00002000, ABSOLUTE)
 
-    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x10000000   0x00000014   Data   RW           15    .data               main.o
-    0x10000014   0x00000001   Data   RW          179    .data               timer.o
-    0x10000015   0x00000003   PAD
-    0x10000018   0x00000004   Data   RW          523    .data               lib_chip_8Nxx.lib(rtc_8nxx.o)
-    0x1000001c   0x00000060   Zero   RW         1053    .bss                c_p.l(libspace.o)
-    0x1000007c   0x00000004   PAD
-    0x10000080   0x00000100   Zero   RW          235    HEAP                keil_startup_lpc8nxx.o
-    0x10000180   0x00000200   Zero   RW          234    STACK               keil_startup_lpc8nxx.o
+    0x10000000   0x00000918   0x00000014   Data   RW           15    .data               main.o
+    0x10000014   0x0000092c   0x00000001   Data   RW          179    .data               timer.o
+    0x10000015   0x0000092d   0x00000003   PAD
+    0x10000018   0x00000930   0x00000004   Data   RW          532    .data               lib_chip_8Nxx.lib(rtc_8nxx.o)
+    0x1000001c        -       0x00000060   Zero   RW         1062    .bss                c_p.l(libspace.o)
+    0x1000007c   0x00000934   0x00000004   PAD
+    0x10000080        -       0x00000100   Zero   RW          235    HEAP                keil_startup_lpc8nxx.o
+    0x10000180        -       0x00000200   Zero   RW          234    STACK               keil_startup_lpc8nxx.o
 
 
 ==============================================================================
@@ -808,12 +808,12 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
          0          0          0          0          0       1444   crp.o
-        68         28        192          0        768        904   keil_startup_lpc8nxx.o
-       750         90          0         20          0      19990   main.o
-        52         10          0          1          0        737   timer.o
+        68         28        192          0        768        884   keil_startup_lpc8nxx.o
+       750         90          0         20          0      19742   main.o
+        52         10          0          1          0        701   timer.o
 
     ----------------------------------------------------------------------
-       870        128        224         24        768      23075   Object Totals
+       870        128        224         24        768      22771   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          0          0          0          3          0          0   (incl. Padding)
 
@@ -844,7 +844,7 @@ Image component sizes
          2          0          0          0          0         68   use_no_semi.o
         24          6          0          0          0        457   board.o
        100          0          0          0          0       2463   bussync_8nxx.o
-       196         40          0          0          0      10125   clock_8nxx.o
+       196         40          0          0          0      13189   clock_8nxx.o
         32          8          0          0          0       1378   flash_8nxx.o
         10          0          0          0          0       3433   gpio_8nxx.o
         54          0          0          0          0       1648   iocon_8nxx.o
@@ -852,7 +852,7 @@ Image component sizes
         10          0          0          0          0        546   timer_8nxx.o
 
     ----------------------------------------------------------------------
-      1234        118          0          4        100      24841   Library Totals
+      1234        118          0          4        100      27905   Library Totals
         12          0          0          0          4          0   (incl. Padding)
 
     ----------------------------------------------------------------------
@@ -861,10 +861,10 @@ Image component sizes
 
        612         16          0          0         96        640   c_p.l
         24          6          0          0          0        457   lib_board_8Nxx.lib
-       586         96          0          4          0      23744   lib_chip_8Nxx.lib
+       586         96          0          4          0      26808   lib_chip_8Nxx.lib
 
     ----------------------------------------------------------------------
-      1234        118          0          4        100      24841   Library Totals
+      1234        118          0          4        100      27905   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -873,8 +873,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      2104        246        224         28        868      46672   Grand Totals
-      2104        246        224         28        868      46672   ELF Image Totals
+      2104        246        224         28        868      49432   Grand Totals
+      2104        246        224         28        868      49432   ELF Image Totals
       2104        246        224         28          0          0   ROM Totals
 
 ==============================================================================
